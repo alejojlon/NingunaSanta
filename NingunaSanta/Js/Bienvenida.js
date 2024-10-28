@@ -4,7 +4,7 @@ const btnComenzar = document.querySelector("#comenzar");
 btnComenzar.addEventListener("click",()=>{
     localStorage.setItem("nombre", nombre.value);
     localStorage.setItem("puntaje-total",0);
-    localStorage.removeItem("desafios-jugadas");
+    localStorage.removeItem("desafios-jugados");
 
-    location.href="";
+    location.href="menu.html";
 })
