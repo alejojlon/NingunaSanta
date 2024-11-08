@@ -16,7 +16,8 @@ body{
 }
 .bg {
     animation:slide 18s ease-in-out infinite alternate;
-    background-image: url(../Images/fondo.png);
+    background-image: url(../Images/luzf.png);
+    background-size: contain;
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -61,18 +62,18 @@ body{
 .container{
     width: 750px;
     height: 80%;
-    background: url(../Images/fondo\ -\ copia.png);
+    background: url(../Images/Fuego.png);
     background-size: cover;
     background-position: center center;
     padding: 20px;
     position: relative;
     border-radius: 20px;
-    box-shadow: 2px -2px 7px 2px #FF1493, -2px 2px 7px 2px #0CFFF4;
+    box-shadow: 2px -2px 7px 2px #f3b405, -2px 2px 7px 2px #df0c0c;
 }
 .container .img{
     width: 90px;
     position: absolute;
-    box-shadow: 2px -2px 7px 2px #FF1493, -2px 2px 7px 2px #0CFFF4;
+    box-shadow: 2px -2px 7px 2px #ffa114, -2px 2px 7px 2px #ff0c0c;
     border-radius: 30px;
     top: -20px;
     right: -150px;
@@ -80,14 +81,14 @@ body{
 
 }
 header{
-    background-color: #630061;
-    color: #12003a;
-    text-shadow: 2px 2px 4px #ff00bf;
+    background-color: #000000;
+    color:  #ffe70c;
+    text-shadow: 2px -2px 4px #ff0c0c, 2px 2px 4px #f53905 ;
     text-align: center;
     font-size: 15px;
     padding: 8px;
     border-radius: 50px;
-    box-shadow: 2px -2px 7px 2px #FF1493, -2px 2px 7px 2px #0CFFF4;
+    box-shadow: 2px -2px 7px 2px #fc0808, -2px 2px 7px 2px #ee8e07;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,9 +96,9 @@ header{
 .inicio{
     text-align: center;
     padding-top: 80px;
-    color: #FF1493;
+    color: #ffc60c;
     font-size: 30px;
-    text-shadow: 2px 2px 4px #0CFFF4;
+    text-shadow: 2px 2px 4px #000c;
 }
 .inicio input{
     display: block;
@@ -111,9 +112,9 @@ header{
     margin-top: 30px;
 }
 .btn{
-    background-color: #630061;
-    color: #0bffeb;
-    text-shadow: 2px 2px 4px #f607c2;
+    background-color: #000000;
+    color: #ffc60c;
+    text-shadow: 2px 2px 4px #df0c0c;
     border: 0;
     padding: 10px;
     font-weight: bold;
@@ -126,7 +127,7 @@ header{
     transition: .3s;
 }
 .btn:hover{
-    background-color: #aa0a82;
+    background-color: #ff6600;
 }
 
 .puntaje, .jugador{
@@ -136,12 +137,14 @@ header{
 .puntaje img, .jugador img{
     width: 40px;
     background-color: #000009;
+    box-shadow: 2px -2px 7px 2px #fc0808, -2px 2px 7px 2px #ee8e07;
     border-radius: 50%;
-    border: 2px solid #FF1493;
+    border: 2px solid #efff14;
     z-index: 2;
 }
 .puntaje .puntos{
-    background-color: #000009;
+    background-color: #ff3300;
+    box-shadow: 2px -2px 7px 2px #fc0808, -2px 2px 7px 2px #ee8e07;
     width: 90px;
     padding: 5px;
     border-radius: 0 30px 30px 0;
@@ -152,7 +155,8 @@ header{
 }
 
 .jugador .nombre{
-    background-color: #000009;
+    background-color: #ff3300;
+    box-shadow: 2px -2px 7px 2px #fc0808, -2px 2px 7px 2px #ee8e07;
     width: 90px;
     padding: 5px;
     border-radius: 30px 0px 0px 30px;
@@ -160,9 +164,9 @@ header{
     font-size: 16px;
 }
 /* SECCION MENU DEL JUEGO */
-.menu{
+.menu {
     margin-top: 30px;
-    color: #dc0381;
+    color: #FF1493;
     text-align: center;
 }
 .desafios{
@@ -174,11 +178,11 @@ header{
 
 }
 .desafio{
-    background-color: #ce08ba;
+    background-color: #000000;
     width: 190px;
     height: 90px;
     border-radius: 15px;
-    color: #000000;
+    color: #eddd07;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -186,7 +190,7 @@ header{
     padding: 20px;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0px 0px 20px #05b4ee;
+    box-shadow: 0px 0px 20px #fc2706;
     font-size: 18px;
     text-align: right;
 
@@ -269,9 +273,6 @@ header{
         color: #0ecbb5;
         font-weight: normal;
     }
-}
-.no-events{
-  pointer-events: none;  
 }
 
 .desabilitada{

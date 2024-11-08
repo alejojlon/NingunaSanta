@@ -19,7 +19,7 @@ let desafiosJugados;
 const desafiosJugadosLS = JSON.parse(localStorage.getItem("desafios-jugados"));
 if(desafiosJugadosLS){
     desafiosJugados = desafiosJugadosLS;
-}else{//comienzo un arreglo vacío, todavía no hay ninguna categoría
+}else{
     desafiosJugados = [];
 }
 console.log(desafiosJugados);
@@ -29,13 +29,13 @@ function agregarEventListenerOpciones(){
     desafios.forEach(desafio=>{
         desafio.addEventListener("click", (e)=>{
             console.log(e.currentTarget.id);
-            //almaceno la categorìa que se eligiò en el Local Storage
+
             localStorage.setItem("desafio-actual", e.currentTarget.id);
-            //Agrego al arreglo la categoría
+            
             desafiosJugados.push(e.currentTarget.id);
             localStorage.setItem("desafios-jugados", JSON.stringify(desafiosJugados));
             console.log(desafiosJugados);
-            //re dirijo a la pàgina del juego
+            
             location.href = "juego.html";
         });
     });
